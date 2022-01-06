@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>THAKUR</title>
+<style>
+    .hello{text-align: center;
+        border: 12px solid;
+  margin-top: 50;
+margin-left: 600;
+font-size: large;
+word-spacing: 10px;
+background-color: rgb(30, 247, 138);
+border-color: red;
+width: 400px;
+border-radius: 20px;
+    }
+    .p{background-color: brown;}
+    .mummy{text-align: center;
+        border: 12px solid red;
+        background-color: darkgray;
+        border-radius: 20px;
+        width: 300px;
+        margin-left: 650;
+    }
+</style>
+
+</head>
+
+<body class="p"><div class="hello">
+
+<form>
+Name :      <input type="text" ><br><br>
+Full Name : <input type="text" ><br><br>
+Gender:<br>
+<h1 id="hello">Chandra bhan singh</h1>
+<input type="radio"  value="thakur" name="hello"> Male 
+<input type="radio"  value="thakur" name="hello"> Female 
+<input type="radio"  value="thakur" name="hello"> Others<br><br>
+Email :     <input type="text" ><br><br>
+Password :  <input type="password" id="singh"><br><br> 
+            
+<input type="button" onclick ="myfunction()" id="sign" value="SUBMIT"  ><br><br>
+</form></diV>
+<br>
+<br>
+<br>
+<br>
+<div class="mummy"><form>
+ <h2>Change Password :</h2><br>   
+ Old Password :  <input type="password" id="ram"><br>  <br> 
+ New Password :  <input type="password" id="sita"><br>
+ <input type="button" onclick="newPass()" value="CHANGE"  id="shyam">
+</form>
+</div>
+
+<script>
+     let two="prashant";
+    function myfunction(){
+       
+       let one= document.getElementById("singh").value;
+      
+       
+       if(one==two){
+        document.getElementById("hello").innerHTML="prashant singh solanki";
+        var a= document.createElement('a');
+        var link = document.createTextNode("This is link");
+        a.appendChild(document.getElementById("sign")); 
+                  
+                // Set the title.
+                //a.title = "This is Link"; 
+                  
+                // Set the href property.
+              a.href = "prashants.html"; 
+                  
+                // Append the anchor element to the body.
+                document.body.appendChild(a); 
+
+       }
+       else{
+           alert("Please enter the correct passsword");
+       }
+    }
+       function newPass(){
+        let first = document.getElementById("ram").value;
+       if(first==two){
+           two=document.getElementById("sita").value;
+           
+       }
+
+       }
+    
+</script>
+
+</body>
+</html>
